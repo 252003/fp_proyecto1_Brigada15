@@ -1,34 +1,9 @@
 #include"conversiones.h"
-/**
- * @brief Invierte una cadena de caracteres
- * 
- * @param a es la cadena
- */
-void reverse_change(char a[]){
-    char b;
-    for (int i = 0; i < (strlen(a)/2); i++)
-    {
-        b=a[i];
-        a[i]=a[strlen(a)-1-i];
-        a[strlen(a)-1-i]=b;
-    }
-}
-
-/**
- * @brief Imprime una cadena al reves
- * 
- * @param reversa es la cadena original a voltear
- */
-void reverse(char reversa[]){
-    for(int j=strlen(reversa)-1; j >=0; j-- ){
-            printf("%c", reversa[j]);
-        }
-}
 
 /**
  * @brief Conversion de decimal a binario
  * 
- * @param num es el numero a convertir en binario
+ * @param n es el numero a convertir en binario
  */
 void conv_dec_bin(int n){
     int t=0;
@@ -45,9 +20,6 @@ void conv_dec_bin(int n){
             strcat(bin, "0"); 
         }    
         }while(n!=0);
-    /* if (num== 1){ 
-        strcat(binario, "1");
-    } */
     printf("Tu numero en binario es: ");
     reverse(bin);
     printf("\n");
@@ -74,7 +46,7 @@ void conv_bin_dec(char bin[]){
 /**
  * @brief Conversion de decimal a octal
  * 
- * @param num es el decimal a convertir
+ * @param n es el decimal a convertir
  */
 void conv_dec_oct(int n){
     int r=0;
@@ -170,7 +142,7 @@ void conv_oct_dec(char oct[]){
 /**
  * @brief Conversion de decimal a hexadecimal
  * 
- * @param num es el numero a convertir
+ * @param n es el numero a convertir
  */
 void conv_dec_hexa(int n){
     int t=0;
