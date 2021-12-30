@@ -5,8 +5,6 @@
 #include<string.h>
 #include<stdlib.h>
 
-void reverse_change(char []);
-void reverse(char reversa[]);
 
 void conv_dec_bin(int n);  
 void conv_bin_dec(char bin[]); 
